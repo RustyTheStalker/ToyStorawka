@@ -1,0 +1,129 @@
+@font-face {
+    font-family: "Gill Sans Heavy";
+    src: url("../assets/fonts/Gill Sans Heavy.otf");
+}
+
+main {
+    background-image: url('../img/chmurki.png');
+    background-attachment: fixed;
+    background-size: cover;
+    text-shadow: 0px 0px 4px black;
+    color: white;
+}
+
+header, .md-tabs {
+    background-color: #E20025 !important;
+    color: #FFD900 !important;
+}
+
+h1 {
+    color: white !important;
+    text-align: center;
+}
+
+h2 {
+    background-color: #E20025;
+    color: #FFD900;
+    display: inline;
+    text-shadow: none;
+}
+
+li {
+    list-style-type: "🤠";
+}
+
+.md-sidebar {
+    display: none;
+}
+
+.md-tabs__item, .md-nav__item {
+    list-style-type: none;
+}
+
+.md-sidebar__scrollwrap {
+    padding: 5px;
+}
+
+.md-nav__title {
+    display: none;
+}
+
+a:hover {
+    color: #004E98 !important;
+    text-shadow: 0px 0px 4px white;
+}
+
+article li a {
+    color: white !important;
+    margin-left: 10px;
+}
+
+.md-nav__link--passed {
+    color: #B6B4A5;
+}
+
+.md-nav__link--active {
+    color: #E20025 !important;
+}
+
+img[src="../assets/images/toystorawka.png"] {
+    width: 12% !important;
+    height: 12% !important;
+    border-radius: 10px;
+}
+
+img[alt="Pixar Popcorn"], img[alt="Toy Story Toons"]{
+    width: 80px;
+    margin-top: 20px;
+}
+
+img[alt="Toy Story"], [alt="Toy Story 2"], [alt="Toy Story 3"], [alt="Toy Story 4"]{
+    width: 160px;
+    margin-top: 20px;
+}
+
+img[alt="Buzz Astral"], [alt="Hamm"]{
+    width: 40%;
+    height: 40%;
+    float: right;
+}
+
+img[alt="Sztuciek"], [alt="Zurg"]{
+    float: right;
+}
+
+.md-logo {
+    width: 35% !important;
+}
+
+.md-header__topic > .md-ellipsis {
+    font-size: 150%;
+}
+
+.md-ellipsis {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+li > ul > li {
+    list-style-type: "⚽";
+}
+
+h3 {
+    margin-top: 0% !important;
+    margin-bottom: 0% !important;
+}
+
+a[href="../🎬 Filmy – Toy Story.pdf"]{
+    background-color: #E20025;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 10px;
+    text-shadow: none;
+    transition: background-color 0.5s;
+    transition: color 0.5s;
+}
+
+a[href="../🎬 Filmy – Toy Story.pdf"]:hover{
+    background-color: #FFD900;
+}
