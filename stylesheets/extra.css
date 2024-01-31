@@ -21,7 +21,7 @@ h1 {
     text-align: center;
 }
 
-h2 {
+h2, h3 {
     background-color: #E20025;
     color: #FFD900;
     display: inline;
@@ -46,10 +46,12 @@ li {
 }
 
 .md-nav__title {
-   color: #FFD900;
-   background: #E20025 !important;
-   display: inline;
-   padding: 4px;
+    color: #FFD900;
+    background: #E20025 !important;
+    display: inline;
+    padding: 4px;
+    text-shadow: none;
+    box-shadow: none !important;
 }
 
 a:hover {
@@ -58,7 +60,7 @@ a:hover {
 
 article li a {
     color: white !important;
-    margin-left: 10px !important;
+    margin-left: 5px !important;
 }
 
 .md-nav__link--passed {
@@ -133,6 +135,17 @@ a[href="../🎬 Filmy – Toy Story.pdf"]:hover{
     background-color: #FFD900;
 }
 
-.md-icon {
-    display: none !important;
+p > a {
+    color: white !important;
+    text-align: left;
+}
+
+/*#windows, #gry-przegladarkowe, ... {
+    display: none;
+} */
+
+blockquote {
+    color: #B6B4A5 !important;
+    font-size: 80%;
+    border-left: .2rem solid #B6B4A5 !important;
 }
