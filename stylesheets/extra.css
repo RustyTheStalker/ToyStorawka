@@ -7,7 +7,7 @@ main {
     background-image: url('../img/chmurki.png');
     background-attachment: fixed;
     background-size: cover;
-    text-shadow: 0px 0px 4px black;
+    text-shadow: 0px 0px 5px black;
     color: white;
 }
 
@@ -26,14 +26,15 @@ h2 {
     color: #FFD900;
     display: inline;
     text-shadow: none;
+    padding: 4px;
 }
 
 li {
     list-style-type: "🤠";
 }
 
-.md-sidebar {
-    display: none;
+.md-sidebar--primary {
+    display: none !important;
 }
 
 .md-tabs__item, .md-nav__item {
@@ -45,17 +46,19 @@ li {
 }
 
 .md-nav__title {
-    display: none;
+   color: #FFD900;
+   background: #E20025 !important;
+   display: inline;
+   padding: 4px;
 }
 
 a:hover {
-    color: #004E98 !important;
-    text-shadow: 0px 0px 4px white;
+    color: #3E7DBD !important;
 }
 
 article li a {
     color: white !important;
-    margin-left: 10px;
+    margin-left: 10px !important;
 }
 
 .md-nav__link--passed {
@@ -75,11 +78,13 @@ img[src="../assets/images/toystorawka.png"] {
 img[alt="Pixar Popcorn"], img[alt="Toy Story Toons"]{
     width: 80px;
     margin-top: 20px;
+    margin-bottom: -20px;
 }
 
 img[alt="Toy Story"], [alt="Toy Story 2"], [alt="Toy Story 3"], [alt="Toy Story 4"]{
     width: 160px;
     margin-top: 20px;
+    margin-bottom: -20px;
 }
 
 img[alt="Buzz Astral"], [alt="Hamm"]{
@@ -126,4 +131,8 @@ a[href="../🎬 Filmy – Toy Story.pdf"]{
 
 a[href="../🎬 Filmy – Toy Story.pdf"]:hover{
     background-color: #FFD900;
+}
+
+.md-icon {
+    display: none !important;
 }
