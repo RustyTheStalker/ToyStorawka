@@ -33,10 +33,6 @@ li {
     list-style-type: "🤠";
 }
 
-.md-sidebar--primary {
-    display: none !important;
-}
-
 .md-tabs__item, .md-nav__item {
     list-style-type: none;
 }
@@ -46,7 +42,7 @@ li {
 }
 
 .md-nav__title {
-    color: #FFD900;
+    color: #FFD900 !important;
     background: #E20025 !important;
     display: inline;
     padding: 4px;
@@ -71,10 +67,36 @@ article li a {
     color: #E20025 !important;
 }
 
-img[src="../assets/images/toystorawka.png"] {
+.md-header__button > img[src="../assets/images/toystorawka.png"] {
     width: 12% !important;
     height: 12% !important;
     border-radius: 10px;
+}
+
+.md-nav__button > img[src="../assets/images/toystorawka.png"] {
+    border-radius: 10px;
+}
+
+@media (pointer: fine){
+    .md-sidebar--primary {
+        display: none;
+    }
+}
+
+@media (pointer: none), (pointer: coarse){
+    img[alt="Buzz Astral"], [alt="Hamm"], [alt="Sztuciek"], [alt="Zurg"] {
+        display: none;
+    }
+    .md-search__overlay, .md-search__inner, .md-search__scrollwrap, .md-search__form {
+        background-color: rgba(0 ,0, 0, 0.15) !important;
+        backdrop-filter: blur(10px) !important;
+    }
+    .md-search-result__article {
+        color: white !important;
+    }
+    .md-search-result__article > h2, .md-search__input, .md-search__input::placeholder, .md-search__icon, label[class="md-search__icon md-icon"], .md-search-result__meta {
+        color: #FFD900 !important;
+    }
 }
 
 img[alt="Pixar Popcorn"], img[alt="Toy Story Toons"]{
@@ -110,6 +132,10 @@ img[alt="Sztuciek"], [alt="Zurg"]{
 .md-ellipsis {
     padding-left: 5px;
     padding-right: 5px;
+}
+
+.md-nav__link > .md-ellipsis {
+    text-shadow: none !important;
 }
 
 li > ul > li {
@@ -148,4 +174,27 @@ blockquote {
     color: #B6B4A5 !important;
     font-size: 80%;
     border-left: .2rem solid #B6B4A5 !important;
+}
+
+.md-sidebar--primary, .md-nav--secondary, .md-sidebar--primary .md-nav--primary {
+    background-color: unset !important;
+}
+
+.md-nav--secondary > .md-nav__list {
+    background-color: rgba(0 ,0, 0, 0.15) !important;
+    backdrop-filter: blur(20px) !important;
+    padding-top: 1px !important;
+}
+
+.md-nav--primary > .md-nav__list {
+    background-color: rgba(0 ,0, 0, 0.15) !important;
+    backdrop-filter: blur(20px) !important;
+}
+
+.md-nav--secondary .md-nav__list .md-nav__link {
+    font-size: 62%;
+}
+
+.md-sidebar__inner .md-nav__list .md-nav__link {
+    font-size: 100%;
 }
