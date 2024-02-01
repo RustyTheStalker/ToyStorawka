@@ -81,6 +81,19 @@ article li a {
     .md-sidebar--primary {
         display: none;
     }
+    .md-search__inner, .md-search__output, .md-search__scrollwrap, .md-search__form {
+        background-color: rgba(0 ,0, 0, 0.2) !important;
+        backdrop-filter: blur(25px) !important;
+    }
+    .md-search__overlay {
+        display: none !important;
+    }
+    .md-search-result__article, .md-search-result__icon {
+        color: white !important;
+    }
+    .md-search-result__article > h2, .md-search__input, .md-search__input::placeholder, .md-search__icon, label[class="md-search__icon md-icon"], .md-search-result__meta {
+        color: #FFD900 !important;
+    }
 }
 
 @media (pointer: none), (pointer: coarse){
@@ -88,10 +101,13 @@ article li a {
         display: none;
     }
     .md-search__overlay, .md-search__inner, .md-search__scrollwrap, .md-search__form {
-        background-color: rgba(0 ,0, 0, 0.15) !important;
-        backdrop-filter: blur(10px) !important;
+        background-color: rgba(0 ,0, 0, 0.2) !important;
+        backdrop-filter: blur(25px) !important;
     }
-    .md-search-result__article {
+    .md-overlay {
+        opacity: 0 !important;
+    }
+    .md-search-result__article, .md-search-result__icon {
         color: white !important;
     }
     .md-search-result__article > h2, .md-search__input, .md-search__input::placeholder, .md-search__icon, label[class="md-search__icon md-icon"], .md-search-result__meta {
@@ -111,17 +127,19 @@ img[alt="Toy Story"], [alt="Toy Story 2"], [alt="Toy Story 3"], [alt="Toy Story 
     margin-bottom: -20px;
 }
 
-img[alt="Buzz Astral"], [alt="Hamm"]{
+img[alt="Buzz Astral"], [alt="Hamm"], [alt="Mustang"], [alt="Czarny"]{
     width: 40%;
     height: 40%;
     float: right;
+    filter: drop-shadow(5px 5px 5px #222222);
 }
 
-img[alt="Sztuciek"], [alt="Zurg"]{
+img[alt="Sztuciek"], [alt="Zurg"], [alt="Rex"], [alt="Trixie"], [alt="Pan Bulwa"]{
     float: right;
+    filter: drop-shadow(5px 5px 5px #222222);
 }
 
-.md-logo {
+.md-header__button {
     width: 35% !important;
 }
 
@@ -147,28 +165,23 @@ h3 {
     margin-bottom: 0% !important;
 }
 
-a[href="../🎬 Filmy – Toy Story.pdf"]{
+a[href="../🎬 Filmy – Toy Story.pdf"], [href="../🎮 Gry – Toy Story.pdf"], [href="../🎧 Muzyka – Toy Story.pdf"]{
     background-color: #E20025;
     color: white;
     padding: 15px 25px;
     border-radius: 10px;
     text-shadow: none;
-    transition: background-color 0.5s;
-    transition: color 0.5s;
 }
 
-a[href="../🎬 Filmy – Toy Story.pdf"]:hover{
+a[href="../🎬 Filmy – Toy Story.pdf"]:hover, [href="../🎮 Gry – Toy Story.pdf"]:hover, [href="../🎧 Muzyka – Toy Story.pdf"]:hover {
     background-color: #FFD900;
+    transition: background-color 0.5s;
 }
 
 p > a {
     color: white !important;
     text-align: left;
 }
-
-/*#windows, #gry-przegladarkowe, ... {
-    display: none;
-} */
 
 blockquote {
     color: #B6B4A5 !important;
@@ -197,4 +210,8 @@ blockquote {
 
 .md-sidebar__inner .md-nav__list .md-nav__link {
     font-size: 100%;
+}
+
+mark, summary > div {
+    color: #E20025 !important;
 }
