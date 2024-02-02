@@ -98,6 +98,9 @@ article li a {
     .md-search-result__article > h2, .md-search__input, .md-search__input::placeholder, .md-search__icon, label[class="md-search__icon md-icon"], .md-search-result__meta {
         color: #FFD900 !important;
     }
+    .md-nav--secondary > .md-nav__list {
+        border-radius: 10px !important;
+    }
 }
 
 @media not (any-pointer: fine) {
