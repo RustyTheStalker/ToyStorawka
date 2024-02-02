@@ -68,16 +68,20 @@ article li a {
 }
 
 .md-header__button > img[src="../assets/images/toystorawka.png"] {
-    width: 12% !important;
-    height: 12% !important;
+    width: 10% !important;
+    height: 10% !important;
     border-radius: 10px;
+}
+
+.md-grid {
+    max-width: 100% !important;
 }
 
 .md-nav__button > img[src="../assets/images/toystorawka.png"] {
     border-radius: 10px;
 }
 
-@media (pointer: fine){
+@media (any-pointer: fine) {
     .md-sidebar--primary {
         display: none;
     }
@@ -96,8 +100,8 @@ article li a {
     }
 }
 
-@media (pointer: none), (pointer: coarse){
-    img[alt="Buzz Astral"], [alt="Hamm"], [alt="Sztuciek"], [alt="Zurg"] {
+@media not (any-pointer: fine) {
+    img[alt="Buzz Astral"], [alt="Hamm"], [alt="Sztuciek"], [alt="Zurg"], [alt="Mustang"], [alt="Czarny"], [alt="Trixie"], [alt="Pan Bulwa"], [alt="Rex"] {
         display: none;
     }
     .md-search__overlay, .md-search__inner, .md-search__scrollwrap, .md-search__form {
@@ -115,32 +119,28 @@ article li a {
     }
 }
 
-img[alt="Pixar Popcorn"], img[alt="Toy Story Toons"]{
+img[alt="Pixar Popcorn"], img[alt="Toy Story Toons"] {
     width: 80px;
     margin-top: 20px;
     margin-bottom: -20px;
 }
 
-img[alt="Toy Story"], [alt="Toy Story 2"], [alt="Toy Story 3"], [alt="Toy Story 4"]{
+img[alt="Toy Story"], [alt="Toy Story 2"], [alt="Toy Story 3"], [alt="Toy Story 4"] {
     width: 160px;
     margin-top: 20px;
     margin-bottom: -20px;
 }
 
-img[alt="Buzz Astral"], [alt="Hamm"], [alt="Mustang"], [alt="Czarny"]{
-    width: 40%;
-    height: 40%;
+img[alt="Buzz Astral"], [alt="Hamm"], [alt="Mustang"], [alt="Czarny"] {
+    width: 387px;
+    height: calc(100% - 387px);
     float: right;
     filter: drop-shadow(5px 5px 5px #222222);
 }
 
-img[alt="Sztuciek"], [alt="Zurg"], [alt="Rex"], [alt="Trixie"], [alt="Pan Bulwa"]{
+img[alt="Sztuciek"], [alt="Zurg"], [alt="Rex"], [alt="Trixie"], [alt="Pan Bulwa"] {
     float: right;
     filter: drop-shadow(5px 5px 5px #222222);
-}
-
-.md-header__button {
-    width: 35% !important;
 }
 
 .md-header__topic > .md-ellipsis {
