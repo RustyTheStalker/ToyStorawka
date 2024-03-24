@@ -7,7 +7,7 @@ main {
     background-image: url('../img/chmurki.png');
     background-attachment: fixed;
     background-size: cover;
-    text-shadow: 0px 0px 5px black;
+    text-shadow: 0px 0px 5px black, 0px 0px 5px black;
     color: white;
 }
 
@@ -52,6 +52,7 @@ li {
 
 a:hover {
     color: #3E7DBD !important;
+    cursor: url('../img/kursor1.png'), auto !important;
 }
 
 article li a {
@@ -68,9 +69,13 @@ article li a {
 }
 
 .md-header__button > img[src="../assets/images/toystorawka.png"] {
-    width: 10% !important;
+    width: 100% !important;
     height: 10% !important;
     border-radius: 10px;
+}
+
+.md-header__button {
+    width: 5%;
 }
 
 .md-grid {
@@ -85,21 +90,40 @@ article li a {
     .md-sidebar--primary {
         display: none;
     }
+
     .md-search__inner, .md-search__output, .md-search__scrollwrap, .md-search__form {
         background-color: rgba(0 ,0, 0, 0.2) !important;
         backdrop-filter: blur(25px) !important;
     }
-    .md-search__overlay {
-        display: none !important;
+
+    .md-search__inner {
+        z-index: 2;
     }
+
+    .md-search__overlay {
+        z-index: 1;
+    }
+
     .md-search-result__article, .md-search-result__icon {
         color: white !important;
     }
+
     .md-search-result__article > h2, .md-search__input, .md-search__input::placeholder, .md-search__icon, label[class="md-search__icon md-icon"], .md-search-result__meta {
         color: #FFD900 !important;
     }
+
     .md-nav--secondary > .md-nav__list {
         border-radius: 10px !important;
+    }
+
+    .md-nav__title {
+        border-radius: 10px;
+        font-size: 1.25em;
+    }
+
+    .md-header__ellipsis {
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -107,16 +131,20 @@ article li a {
     img[alt="Buzz Astral"], [alt="Hamm"], [alt="Sztuciek"], [alt="Zurg"], [alt="Mustang"], [alt="Czarny"], [alt="Trixie"], [alt="Pan Bulwa"], [alt="Rex"] {
         display: none;
     }
+
     .md-search__overlay, .md-search__inner, .md-search__scrollwrap, .md-search__form {
         background-color: rgba(0 ,0, 0, 0.2) !important;
         backdrop-filter: blur(25px) !important;
     }
+
     .md-overlay {
         opacity: 0 !important;
     }
+
     .md-search-result__article, .md-search-result__icon {
         color: white !important;
     }
+
     .md-search-result__article > h2, .md-search__input, .md-search__input::placeholder, .md-search__icon, label[class="md-search__icon md-icon"], .md-search-result__meta {
         color: #FFD900 !important;
     }
@@ -217,4 +245,17 @@ blockquote {
 
 mark, summary > div {
     color: #E20025 !important;
+}
+
+code {
+    background-color: #1C1E1F !important;
+    color: #BEB9B0 !important;
+}
+
+body, label, input {
+    cursor: url('../img/kursor1.png'), auto !important;
+}
+
+a[href=""] {
+    cursor: not-allowed !important;
 }
