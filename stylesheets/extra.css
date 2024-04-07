@@ -51,7 +51,7 @@ li {
 }
 
 a:hover {
-    color: #3E7DBD !important;
+    color: #FFD900 !important;
     cursor: url('../img/kursor1.png'), auto !important;
 }
 
@@ -68,7 +68,7 @@ article li a {
     color: #E20025 !important;
 }
 
-.md-header__button > img[src="../assets/images/toystorawka.png"] {
+.md-header__button > img[src$="assets/images/toystorawka.png"] {
     width: 100% !important;
     height: 10% !important;
     border-radius: 10px;
@@ -206,6 +206,7 @@ a[href="../🎬 Filmy – Toy Story.pdf"], [href="../🎮 Gry – Toy Story.pdf"
 
 a[href="../🎬 Filmy – Toy Story.pdf"]:hover, [href="../🎮 Gry – Toy Story.pdf"]:hover, [href="../🎧 Muzyka – Toy Story.pdf"]:hover {
     background-color: #FFD900;
+    color: #004E98 !important;
     transition: background-color 0.5s;
 }
 
@@ -259,3 +260,49 @@ body, label, input {
 a[href=""] {
     cursor: not-allowed !important;
 }
+
+.en-title {
+    font-weight: normal;
+    font-style: italic;
+}
+
+.en-title::before {
+    content: '(';
+    font-style: normal;
+}
+
+.en-title::after {
+    content: ')';
+    font-style: normal;
+}
+
+.en-title2 {
+    font-weight: normal;
+}
+
+.en-title2::before {
+    content: '[';
+    font-weight: normal;
+}
+
+.en-title2::after {
+    content: ']';
+    font-weight: normal;
+}
+
+ul:not(.md-nav__list) > li > a, ul:not(.md-nav__list) > li > p > a {
+    font-weight: bold;
+}
+
+.en-title3 {
+    font-weight: normal;
+}
+
+.en-title3::before {
+    content: '(';
+}
+
+.en-title3::after {
+    content: ')';
+}
+
